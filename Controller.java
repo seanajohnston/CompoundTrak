@@ -117,7 +117,6 @@ class Quit extends Action{
 
     public void action(){
 	dm.close();
-	System.out.println("Goodbye!");
 	System.exit(0);
     }
 }

@@ -14,6 +14,8 @@ public class CompoundTrak {
 	String input;
 	Action action;
 	while(true){
+	    System.out.println("Welcom to CompoundTrak. Enter \"help\" for a"
+			       + " list of commands.");
 	    System.out.print("CTrak> ");
 	    input = scanner.next();
 	    action = cmdMap.get(input);
