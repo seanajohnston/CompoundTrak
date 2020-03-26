@@ -16,12 +16,12 @@ The program begins from the main method of the CompoundTrak class and the SQLite
 ```
 java -classpath .:sqlite-jdbc-3.30.1.jar CompoundTrak
 ```
-Then, enter the command "help" for a list of subsequent commands.
+Then, enter the command "help" for a list of commands provided by CompoundTrak.
 
 ## Back End
 
 If one wishes to incorporate the backend only in a program, the DataManager, Connect and DbBuilder classes are the only required. The DataManager contains the functions required for the challenge. 
 
-## Known issue
+## Known Issue
 
-CompoundTrak creates the database and its tables the first time it runs. The next times it runs, CompoundTrak will throw SQL errors because it is trying to create tables already present in the database. A simple fix checks when the ctrak.db file and tables are previously created.
+CompoundTrak creates the database and its tables the first time it runs. The next times it runs, CompoundTrak will throw SQL errors because it is trying to create tables already present in the database. This error can simply be ignored and the program will function as normal. A simple fix checks when the ctrak.db file and tables are previously created. 
